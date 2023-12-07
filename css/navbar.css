@@ -1,0 +1,88 @@
+/* Navbar Styling */
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 16, 9);
+    padding: 20px;
+}
+
+.Logo {
+    margin-left: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a.active {
+    color: #00B207;
+}
+
+.ProfileInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+}
+
+.ProfileInfo .ProfileIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/* Updated styling for Logout Options */
+
+.LogoutOptions {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.ProfileInfo:hover .LogoutOptions {
+    display: block;
+}
+
+.LogoutOptions button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    color: #333;
+    border-radius: 4px;
+}
+
+.LogoutOptions button:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}

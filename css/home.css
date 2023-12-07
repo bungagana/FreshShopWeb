@@ -1,0 +1,334 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========== LP STYLING ============*/
+
+.Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.ImageContainer {
+    width: 100%;
+    max-height: auto;
+}
+
+.Content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ContentText {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ContentHeading {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.SaleInfo {
+    margin-top: 28px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.Discount {
+    font-size: 22px;
+    font-weight: 700;
+    background: #FF8A00;
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+
+.FreeShipping {
+    margin-top: 8px;
+    font-size: 14px;
+    font-style: oblique;
+    opacity: 0.8;
+}
+
+.ShopNowButton {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ffffff;
+    color: #00B207;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 48px;
+}
+
+
+/* =========== FEATURED STYLING ============*/
+
+.Featured {
+    width: 97%;
+    height: 100%;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 8px 40px rgba(0, 38, 2, 0.08);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.Feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.Info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+
+/* =========== POP CATEGORIES STYLING ============*/
+
+.PopularCategories {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 18px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.Category {
+    width: 240px;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+    border: 1px #E6E6E6 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.SubHeader {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1A1A1A;
+    line-height: 38.40px;
+    word-wrap: break-word;
+    margin: 40px;
+    text-align: center;
+}
+
+.Image1 {
+    width: 150px;
+    height: 100px;
+}
+
+.CategoryName {
+    width: 200px;
+    color: #1A1A1A;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+
+
+/* =========== ARTICLE STYLING ============*/
+
+.Article {
+    margin-top: 20px;
+    background-color: #f8fff8;
+    padding-left: 40px;
+}
+
+.ArticleContent {
+    display: flex;
+    align-items: center;
+}
+
+.ArticleImage {
+    flex: 1;
+    padding: 10px;
+}
+
+.ArticleImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ArticleText {
+    flex: 1;
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 50%;
+}
+
+.ReadMoreButton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #00B207;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.ReadMoreButton:hover {
+    background-color: #0b6534;
+}
+
+
+/* =========== TESTI STYLING ============*/
+
+.Testimonials {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 18px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.TestimonialTitle {
+    text-align: center;
+    color: #1A1A1A;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.TestimonialCard {
+    background: #ffffff;
+    border: 1.5px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 200px;
+    max-height: 250px;
+}
+
+.Name {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Comment {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/*-------- Rating Setting --------*/
+
+.Star {
+    color: #FFD700;
+}
+
+.Star.empty {
+    color: #ccc;
+}
+
+
+/* =========== FOOTER STYLING ============*/
+
+.Sponsor {
+    background: #333;
+    padding-bottom: 20px;
+}
+
+.LogoImage {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.FooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FooterLogo {
+    margin-right: 20px;
+}
+
+.FooterLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.FooterLinks li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.SocialIcons a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.CopyrightText {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 40px;
+}

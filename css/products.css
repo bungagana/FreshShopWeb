@@ -1,0 +1,228 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========== NAVBAR STYLING ============*/
+
+
+/* ----------- Divide navbar jadi 2 2 frame and give bg, padding ------------------*/
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 16, 9);
+    padding: 20px;
+}
+
+
+/* --------- Geser logo ke kiri ----------*/
+
+.Logo {
+    margin-left: 40px;
+}
+
+
+/* --------- List Styling ----------*/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 20px;
+}
+
+
+/* --------- A Styling w/o underline or decoration ----------*/
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* --------- Give a color when a active ----------*/
+
+a.active {
+    color: #00B207;
+}
+
+.ProfileInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.ProfileIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/* Content styles */
+
+
+/* Styling for the main content area */
+
+.Content {
+    padding: 48px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the product categories filter */
+
+.SubFilter {
+    margin-bottom: 8px;
+}
+
+.CategoryFilter select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 32px;
+}
+
+.SubProduct {
+    margin-bottom: 8px;
+}
+
+.ProductCategory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.Product {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(255, 236, 236, 0.671);
+}
+
+.Product img {
+    max-width: 100%;
+}
+
+.produk-detail {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.Productdetail .Name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4px;
+}
+
+.Productdetail .Price {
+    font-size: 14px;
+    font-weight: 500;
+    color: #383f01;
+    font-style: italic;
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4px;
+}
+
+.AddToCart {
+    background: rgba(110, 214, 114, 0.267);
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #1bcd00;
+    border: none;
+    padding: 5px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+hr {
+    margin-top: 60px;
+}
+
+.SubHeadCart {
+    margin-top: 10px;
+}
+
+.ShoppingCart {
+    margin-top: 10px;
+}
+
+
+/* CSS untuk mengatur shopping cart item ke bawah */
+
+.ShoppingCart ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Mengatur item dalam keranjang menjadi vertikal */
+}
+
+
+/* CSS untuk item dalam keranjang */
+
+.ShoppingCart ul li {
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.TotalPrice {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #017803;
+}
+
+
+/* CSS untuk tombol "Buy" */
+
+#buyButton {
+    background-color: #00B207;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#buyButton:hover {
+    background-color: #0b5a0d;
+}
+
+
+/* Add your additional CSS styles here */
