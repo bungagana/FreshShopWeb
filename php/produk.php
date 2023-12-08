@@ -6,6 +6,11 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 $userProfileName = isset($_SESSION['username']) ? $_SESSION['username'] : "Guest";
+
+
+$user_id = $_SESSION['user_id'];
+$cart = []; 
+
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +38,6 @@ $userProfileName = isset($_SESSION['username']) ? $_SESSION['username'] : "Guest
         <div class="ProfileInfo">
             <img src="../images/profile-icon.png" alt="Profile Icon" class="ProfileIcon" id="profileIcon">
             <span id="userName"><?php echo $userProfileName; ?></span>
-            <!-- Container for Logout Options -->
             <div id="logoutOptions" class="LogoutOptions">
                 <button id="logoutButton"><a href="index.php">Logout</a></button>
             </div>
@@ -63,14 +67,12 @@ $userProfileName = isset($_SESSION['username']) ? $_SESSION['username'] : "Guest
         </div>
         <h4 class="SubProduct">Product Categories</h4>
         <div class="ProductCategory" id="Products">
-            <!-- automatically display, generate product cart from js -->
         </div>
         <hr>
 
         <h4 class="SubHeadCart">Shopping Cart</h4>
         <div class="ShoppingCart">
             <ul id="cartItems">
-                <!-- Selected items will be displayed here -->
             </ul>
             <div class="TotalPrice">
                 Total: <span id="totalPrice">0</span>
@@ -81,7 +83,10 @@ $userProfileName = isset($_SESSION['username']) ? $_SESSION['username'] : "Guest
 
     <!---------------------- START JS SECTION -------------------------->
     <script src="../js/products.js"></script>
-    <!---------------------- END NAVBAR SECTION -------------------------->
+    <script>
+        const products = <?php echo json_encode($products); ?>;
+        const cart = <?php echo json_encode($cart); ?>;
+    </script>
 </body>
 
 </html>

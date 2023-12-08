@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if ($stmt->fetch()) {
     if (password_verify($loginPassword, $dbPassword)) {
         $_SESSION['user_id'] = $userId;
-        $_SESSION['username'] = $dbUsername; // Tambahkan baris ini
+        $_SESSION['username'] = $dbUsername; 
         header("Location: home.php");
         header("Location: produk.php");
         exit; 

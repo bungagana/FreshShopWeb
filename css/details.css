@@ -1,0 +1,106 @@
+/* CSS */
+
+.produk-detail {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.product-name {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.product-id,
+.product-price {
+    font-size: 16px;
+}
+
+.product-description {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.quantity {
+    margin-top: 10px;
+    /* Menambahkan margin antara price dan quantity */
+}
+
+
+/* Tambahkan aturan gaya untuk button-container */
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.add-to-cart-button {
+    background-color: transparent;
+    color: #00B207;
+    border: 2px solid #00B207;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-to-cart-button {
+    background-color: transparent;
+    color: #00B207;
+    border: 2px solid #00B207;
+    padding: 10px 20px;
+    /* Mengubah ukuran padding */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    /* Mengubah ukuran font */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.order-button {
+    background-color: #00B207;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    /* Mengubah ukuran padding */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    /* Mengubah ukuran font */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #0b5a0d;
+}

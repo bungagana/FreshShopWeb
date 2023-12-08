@@ -5,87 +5,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-/* =========== NAVBAR STYLING ============*/
-
-
-/* ----------- Divide navbar jadi 2 2 frame and give bg, padding ------------------*/
-
-.Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(23, 16, 9);
-    padding: 20px;
-}
-
-
-/* --------- Geser logo ke kiri ----------*/
-
-.Logo {
-    margin-left: 40px;
-}
-
-
-/* --------- List Styling ----------*/
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    margin: 0 20px;
-}
-
-
-/* --------- A Styling w/o underline or decoration ----------*/
-
-a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-
-/* --------- Give a color when a active ----------*/
-
-a.active {
-    color: #00B207;
-}
-
-.ProfileInfo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 40px;
-    color: #fff;
-    font-size: 12px;
-}
-
-.ProfileIcon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-
-/* Content styles */
-
-
-/* Styling for the main content area */
-
 .Content {
     padding: 48px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-
-/* Style the product categories filter */
 
 .SubFilter {
     margin-bottom: 8px;
@@ -138,6 +62,22 @@ a.active {
     display: flex;
     justify-content: flex-start;
     margin-left: 4px;
+    color: #333;
+    /* Add a color to make the text visible */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+.Productdetail .Name a {
+    color: #333;
+    /* Add a color to make the text visible */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+.Productdetail .Name a:hover {
+    color: #555;
+    /* Add a color change on hover for links */
 }
 
 .Productdetail .Price {
@@ -175,19 +115,12 @@ hr {
     margin-top: 10px;
 }
 
-
-/* CSS untuk mengatur shopping cart item ke bawah */
-
 .ShoppingCart ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* Mengatur item dalam keranjang menjadi vertikal */
 }
-
-
-/* CSS untuk item dalam keranjang */
 
 .ShoppingCart ul li {
     border: 1px solid #ccc;
@@ -205,9 +138,6 @@ hr {
     color: #017803;
 }
 
-
-/* CSS untuk tombol "Buy" */
-
 #buyButton {
     background-color: #00B207;
     color: white;
@@ -223,6 +153,3 @@ hr {
 #buyButton:hover {
     background-color: #0b5a0d;
 }
-
-
-/* Add your additional CSS styles here */

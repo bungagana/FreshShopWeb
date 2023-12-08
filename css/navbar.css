@@ -86,3 +86,59 @@ a.active {
     background-color: #ddd;
     border-radius: 4px;
 }
+
+
+/* =========== FOOTER STYLING ============*/
+
+.Sponsor {
+    background: #333;
+    padding-bottom: 20px;
+}
+
+.LogoImage {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.FooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FooterLogo {
+    margin-right: 20px;
+}
+
+.FooterLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.FooterLinks li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.SocialIcons a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.CopyrightText {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 40px;
+}

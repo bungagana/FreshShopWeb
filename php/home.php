@@ -34,9 +34,9 @@ $userProfileName = isset($_SESSION['username']) ? $_SESSION['username'] : "Guest
         <ul>
             <li><a href="home.php" class="active">Home</a></li>
             <li><a href="produk.php">Catalog</a></li>
-            <li><a href="#">My Booking</a></li>
-            <li><a href="#">Saved</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#">My History</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="profile.php">Profile</a></li>
         </ul>
         <div class="ProfileInfo">
             <img src="../images/profile-icon.png" alt="Profile Icon" class="ProfileIcon" id="profileIcon">

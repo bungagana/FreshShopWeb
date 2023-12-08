@@ -1,36 +1,132 @@
 //=========== SELECT CONTEN CATEGORIES (ARRAY) ==========================
 const products = {
-    Fruits: [
-        { id: 'Orange', name: 'Orange', price: 4.49 },
-        { id: 'Guava', name: 'Guava Jav', price: 5.99 },
-        { id: 'Strawberry', name: 'Korean Strawberry', price: 20.07 },
-        { id: 'Berry', name: 'Import Berry', price: 18.99 },
+    Fruits: [{
+            id: 'Orange',
+            name: 'Orange',
+            price: 4.49,
+            description: 'Sweet and juicy orange. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            id: 'Guava',
+            name: 'Guava Jav',
+            price: 5.99,
+            description: 'Tropical guava from Java. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+            id: 'Strawberry',
+            name: 'Korean Strawberry',
+            price: 20.07,
+            description: 'Fresh strawberries from Korea. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        },
+        {
+            id: 'Berry',
+            name: 'Import Berry',
+            price: 18.99,
+            description: 'Assorted imported berries. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        },
     ],
-    Vegetables: [
-        { id: 'Soup', name: 'Soup Vegetables', price: 5.99 },
-        { id: 'Carrot', name: 'Organic Carrot', price: 5.80 },
-        { id: 'Cucumbar', name: 'Cucumbar', price: 4.60 },
-        { id: 'BellPeppers', name: 'Bell Peppers', price: 6.10 },
+    Vegetables: [{
+            id: 'Soup',
+            name: 'Soup Vegetables',
+            price: 5.99,
+            description: 'Fresh vegetables for soup. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            id: 'Carrot',
+            name: 'Organic Carrot',
+            price: 5.80,
+            description: 'Organically grown carrots. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+            id: 'Cucumbar',
+            name: 'Cucumbar',
+            price: 4.60,
+            description: 'Crisp and fresh cucumbers. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        },
+        {
+            id: 'BellPeppers',
+            name: 'Bell Peppers',
+            price: 6.10,
+            description: 'Colorful bell peppers. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        },
     ],
-    'Meat-Fish': [
-        { id: 'Flesh', name: 'Flesh Meat', price: 40.87 },
-        { id: 'Sausage', name: 'Sausage', price: 13.78 },
-        { id: 'Salmon', name: 'Salmon Fish', price: 40.60 },
-        { id: 'Meat', name: 'Meat Var 2', price: 38.78 },
+    'Meat-Fish': [{
+            id: 'Flesh',
+            name: 'Flesh Meat',
+            price: 40.87,
+            description: 'High-quality flesh meat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            id: 'Sausage',
+            name: 'Sausage',
+            price: 13.78,
+            description: 'Delicious sausages. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+            id: 'Salmon',
+            name: 'Salmon Fish',
+            price: 40.60,
+            description: 'Premium salmon fish. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        },
+        {
+            id: 'Meat',
+            name: 'Meat Var 2',
+            price: 38.78,
+            description: 'Variety of meat products. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        },
     ],
-    Snacks: [
-        { id: 'Maca', name: 'Pink Macaron', price: 6.99 },
-        { id: 'Popcorn', name: 'White Popcorn', price: 6.80 },
-        { id: 'Gummy', name: 'Gummy Bear', price: 4.22 },
-        { id: 'Candy', name: 'Marble Candy', price: 6.10 },
+    Snacks: [{
+            id: 'Maca',
+            name: 'Pink Macaron',
+            price: 6.99,
+            description: 'Sweet pink macarons. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            id: 'Popcorn',
+            name: 'White Popcorn',
+            price: 6.80,
+            description: 'Classic white popcorn. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+            id: 'Gummy',
+            name: 'Gummy Bear',
+            price: 4.22,
+            description: 'Colorful gummy bears. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        },
+        {
+            id: 'Candy',
+            name: 'Marble Candy',
+            price: 6.10,
+            description: 'Marble-patterned candies. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        },
     ],
-    Beverages: [
-        { id: 'Canna', name: 'Cannabis Infused', price: 6.99 },
-        { id: 'Drink', name: 'Bottle Drink', price: 4.58 },
-        { id: 'Mac', name: 'Mac Cafe Coffee', price: 5.80 },
-        { id: 'Starbucks', name: 'Starbucks Coffee', price: 8.99 },
+    Beverages: [{
+            id: 'Canna',
+            name: 'Cannabis Infused',
+            price: 6.99,
+            description: 'Cannabis-infused beverages. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            id: 'Drink',
+            name: 'Bottle Drink',
+            price: 4.58,
+            description: 'Bottled drinks for refreshment. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+            id: 'Mac',
+            name: 'Mac Cafe Coffee',
+            price: 5.80,
+            description: 'Coffee from Mac Cafe. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        },
+        {
+            id: 'Starbucks',
+            name: 'Starbucks Coffee',
+            price: 8.99,
+            description: 'Premium Starbucks coffee. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        },
     ],
 };
+
 //=========== deklrasi elemen dr id html =============
 const categorySelect = document.getElementById('categorySelect');
 const productCategory = document.getElementById('Products');
@@ -41,7 +137,6 @@ const cart = [];
 //======= Like set on click listener in mobile ============
 categorySelect.addEventListener('change', displayProducts);
 productCategory.addEventListener('click', addToCart);
-
 //============ DISPLAY FUNCTION ====================
 function displayProducts() {
     const selectedCategory = categorySelect.value;
@@ -49,13 +144,14 @@ function displayProducts() {
 
     if (productsInCategory) {
         productCategory.innerHTML = productsInCategory
-            // ====== to read html code use map annd join yaa to joining 
             .map(
                 (product) => `
             <div class="Product">
                 <img class="Image1" src="../images/${product.id}.jpg" alt="${product.name}">
                 <div class="Productdetail">
-                    <div class="Name">${product.name}</div>
+                    <div class="Name">
+                        <a href="details.php?id=${product.id}">${product.name}</a>
+                    </div>
                     <div class="Price">RM ${product.price}</div>
                     <button data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" class="AddToCart">Add to Cart</button>
                 </div>
@@ -63,7 +159,25 @@ function displayProducts() {
         `
             )
             .join('');
+
+        // Add click event listeners to product names
+        const productNames = document.querySelectorAll('.Name a');
+        productNames.forEach(name => {
+            name.addEventListener('click', viewProductDetail);
+        });
     }
+}
+
+function getProductIdFromURL() {
+    // Extract the product ID from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('id');
+}
+
+function viewProductDetail(e) {
+    e.preventDefault();
+    const productId = e.target.getAttribute('href').split('=')[1];
+    window.location.href = `../php/details.php?id=${productId}`;
 }
 
 function addToCart(e) {
@@ -190,7 +304,7 @@ function searchProducts(event) {
 }
 
 // Function to display filtered products
-function displayFilteredProducts(filteredProducts) {
+function displayFilteredProductss(filteredProducts) {
     const productCategory = document.getElementById('Products');
 
     if (filteredProducts.length > 0) {
@@ -211,26 +325,6 @@ function displayFilteredProducts(filteredProducts) {
     }
 }
 
-// Function to display products based on the selected category
-function displayProducts() {
-    const selectedCategory = document.getElementById('categorySelect').value.toLowerCase();
-    const productsInCategory = products[selectedCategory];
-
-    if (productsInCategory) {
-        document.getElementById('Products').innerHTML = productsInCategory
-            .map(product => `
-                <div class="Product">
-                    <img class="Image1" src="../images/${product.id}.jpg" alt="${product.name}">
-                    <div class="Productdetail">
-                        <div class="Name">${product.name}</div>
-                        <div class="Price">RM ${product.price.toFixed(2)}</div>
-                        <button data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" class="AddToCart">Add to Cart</button>
-                    </div>
-                </div>
-            `)
-            .join('');
-    }
-}
 
 // Initial display of products
 const initialCategory = document.getElementById('categorySelect').value.toLowerCase();
